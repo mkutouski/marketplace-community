@@ -61,3 +61,15 @@ opennebula_template:
     - CONTAINER_VOLUMES: 'O|text|Volume mounts (format: /host/path:/container/path)|/var/run/docker.sock:/var/run/docker.sock:ro,nextcloud_aio_mastercontainer:/mnt/docker-aio-config|'
   inputs_order: CONTAINER_NAME,CONTAINER_PORTS,CONTAINER_ENV,CONTAINER_VOLUMES
 logo: logos/nextcloud-suse.png
+
+images:
+- name: nextcloud-suse-7.0.0-0-20251223.qcow2
+  url: >-
+    https://d38nm155miqkyg.cloudfront.net/nextcloud-suse-7.0.0-0-20251223.qcow2
+  type: OS
+  dev_prefix: vd
+  driver: qcow2
+  size: 483865600
+  checksum:
+    md5: 88a4e3b3a24299c9f58d882f3c939984
+    sha256: ad808298b1203e80a8add60d6e41d0a6b36f413e18a512d0bbffe3d6ed12a08b
